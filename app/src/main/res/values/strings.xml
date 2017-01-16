@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PostsViewer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_messg">MessgAct</string>
+    <string name="logout">Log out</string>
+    <string name="title_activity_post_view_act1">PostViewAct1</string>
+</resources>

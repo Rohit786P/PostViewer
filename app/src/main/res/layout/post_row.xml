@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7ba6ed">
+
+        <RelativeLayout
+            android:id="@+id/rellayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/linlayout01"
+            >
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingTop="6dp"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/expandArrow"
+            android:text="   Title   :"
+            android:textColor="#000000"
+             />
+
+        <TextView
+            android:id="@+id/Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/expandArrow"
+            android:layout_below="@id/Title"
+            android:text="Message :"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/postTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="#3c3fd8"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:text="djgadjgjdgajsdgjasdgjasdjasgdjhasgjasgdjas"
+            android:paddingTop="3dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/Title"
+            />
+        <TextView
+            android:id="@+id/postBody"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="6dp"
+            android:textColor="#3d63e2"
+            android:text="asjbgakjsdkjhdkahdklashdkjashdkasjhdkjashdkjashdkjashdkjashdkjashdasdsad"
+            android:layout_marginTop="9dp"
+            android:textStyle="bold"
+            android:layout_below="@id/postTitle"
+            android:layout_toRightOf="@id/Body"
+            />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linlayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/expandArrow"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            android:src="@drawable/d"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lLayoutP1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="22dp"
+            android:background="#998e97"
+            android:layout_marginLeft="38dp"
+            android:layout_below="@id/linlayout01"
+            />
+        <LinearLayout
+            android:id="@+id/lLayoutP2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="7dp"
+            android:background="#998e97"
+            android:layout_marginLeft="38dp"
+            android:layout_above="@id/linlayout01"
+            />
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

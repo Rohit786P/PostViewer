@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+    <!--<android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height=""></android.support.design.widget.AppBarLayout>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+<RelativeLayout
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    >
+    <ImageView
+        android:id="@+id/imageOfUser"
+        android:layout_width="100dp"
+        android:src="@drawable/user"
+        android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_toRightOf="@id/imageOfUser"
+        android:text="Anthony Gonsalves"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/userIdIdol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User ID:"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/userIdDynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_toRightOf="@id/userIdIdol"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/userNameIdol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/userNameDynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_toRightOf="@id/userNameIdol"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout4"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout3"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/emailIdIdol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email :"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/emailIdDynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_toRightOf="@id/emailIdIdol"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout5"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout4"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/phoneIdol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone :"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/phoneDynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_toRightOf="@id/phoneIdol"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout6"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout5"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/websiteIdol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Website :"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/websiteDynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_toRightOf="@id/websiteIdol"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout7"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/layout6">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Address :"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout8"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout7"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/streetIdol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Street :"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/streetDynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_toRightOf="@id/streetIdol"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout9"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout8"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/suiteIdol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suite :"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/suiteDynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_toRightOf="@id/suiteIdol"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout10"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout9"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/cityIdol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City :"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/cityDynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_toRightOf="@id/cityIdol"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout11"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout10"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/zipcodeIdol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zipcode :"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignTop="@+id/zipcodeDynamic" />
+
+        <TextView
+            android:id="@+id/zipcodeDynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_toRightOf="@id/zipcodeIdol"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout12"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout11"
+        android:background="#7e9ccc">
+        <TextView
+            android:id="@+id/geoIdol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geo-Address :"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="8dp"
+
+            />
+
+        <TextView
+            android:id="@+id/geoLongIdle"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/geoIdol"
+            android:layout_height="wrap_content"
+            android:text="longitudinal :"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            />
+
+        <TextView
+            android:id="@+id/geoLatIdle"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/geoLongIdle"
+            android:layout_height="wrap_content"
+            android:text="latitudinal  :"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            />
+        <TextView
+            android:id="@+id/geoLongtDynamic"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/geoLongIdle"
+            android:layout_height="wrap_content"
+            android:text="longitudinal"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="42dp"
+
+            />
+
+        <TextView
+            android:id="@+id/geoLatDynamic"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/geoLongIdle"
+            android:layout_height="wrap_content"
+            android:text="latitudinal "
+            android:textStyle="italic"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginTop="85dp"
+            android:layout_marginLeft="5dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout13"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/layout12">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Company Info :"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout14"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout13"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/nameCIdol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/nameCDynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_toRightOf="@id/nameCIdol"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout15"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout14"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/catchPIdol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="catchPhrase :"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/catchPDynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_toRightOf="@id/catchPIdol"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout16"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout15"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/bsIdol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bs :"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/bsDynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_toRightOf="@id/bsIdol"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            />
+
+    </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>

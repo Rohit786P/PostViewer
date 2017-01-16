@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="8dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#abe4e8">
+
+        <LinearLayout
+            android:id="@+id/lLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+        <TextView
+            android:id="@+id/titleChild"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="7dp"
+            android:text="Title :"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/postChildTitle"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:text="gdjhgffgsdjkfgfkjsgdfjkgsdlsgdfkjsgdfklkhdkahsdkjahsdkjashdkjashdkjsahdkjsahdkj"
+            android:layout_toRightOf="@id/titleChild"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+
+            android:textColor="#e26e3d"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lLayout1"
+            >
+        <TextView
+            android:id="@+id/bodyChild"
+            android:text="Body :"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_below="@id/titleChild"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/postChildBody"
+            android:textSize="15sp"
+            android:textColor="#3d63e2"
+            android:text="kjadkadkjasjashdkjashdkjashdkjashdkjashhkjsdhfkhkldshfklsdhfdkjhaskdjhaskjhdkjashdkjashdkjsh"
+            android:layout_toRightOf="@id/bodyChild"
+            android:layout_below="@id/postChildTitle"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lLayout3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="7dp"
+            android:background="#998e97"
+            android:layout_marginLeft="38dp"
+            android:layout_below="@id/lLayout2"
+            />
+        <LinearLayout
+            android:id="@+id/lLayout4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="7dp"
+            android:background="#998e97"
+            android:layout_marginLeft="38dp"
+            android:layout_above="@id/lLayout1"
+            />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
